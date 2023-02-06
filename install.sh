@@ -129,10 +129,10 @@ fi
 # Set binary filenanme to match output of vercel/pkg.
 if [[ ${PLATFORM} == "x86_64" ]]
 then
-  BINARY="${PACKAGE_NAME}-${VERSION}-x64"
+  BINARY="${PACKAGE_NAME}-${VERSION}-macos-x64"
 elif [[ ${PLATFORM} == "arm64" ]]
 then
-  BINARY="${PACKAGE_NAME}-${VERSION}-arm64"
+  BINARY="${PACKAGE_NAME}-${VERSION}-macos-arm64"
 fi
 
 # Display binary that is being downloaded.
