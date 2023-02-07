@@ -153,9 +153,6 @@ fi
 # Make sure the binary is executable.
 chmod +x "${BINARY}"
 
-# Ad Hoc codesign the binary. Temporary until code signing with certificates is implemented in CI.
-codesign -fs - "${BINARY}" 2>/dev/null
-
 # Check if install path exists, create it if not.
 if [ ! -d "${INSTALL_PATH}" ]
 then
