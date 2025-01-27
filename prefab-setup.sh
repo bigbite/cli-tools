@@ -9,12 +9,12 @@ echo "Installing Prefab"
 
 if ! type node > /dev/null 2>&1 && ! which node > /dev/null 2>&1
 then
-    echo "Please install Node.js - see: https://nodejs.org/en/download"
+    echo "Please install Node.js via FNM - see: https://bigbite.engineering/engineering/guides/nvm-to-fnm"
 fi;
 
 if ! type npm > /dev/null 2>&1 && ! which npm > /dev/null 2>&1
 then
-    echo "Please install NPM - see: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
+    echo "Please install NPM via FNM - see: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
 fi;
 
 npm i -g git+ssh://github.com:bigbite/prefab
